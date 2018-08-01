@@ -17,3 +17,4 @@ tags: ["blog","story"]
  [installing hugo](https://gohugo.io/getting-started/installing) is quick and simple. and the [themes](https://themes.gohugo.io/) are fantastic. For the base i'm starting off with [Call me Sam.](https://themes.gohugo.io/hugo-theme-sam/) because I liked its simplicity. I will probably update it's main at some point. (aka updating all typeface to use [Hack](https://sourcefoundry.org/hack/))
 
 
+
