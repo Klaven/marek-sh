@@ -30,6 +30,8 @@ on top of this you need to ensure that you have the setting to enforce `https` s
 
 While you are at it you should donate too [letsencrypt.org](https://letsencrypt.org/donate/) as they will give  you a free certificate.
 
+After setting up netlify not only will you have an awesome static site, but each time you push to your master branch it will auto deploy!
+
 
 ## Conclusion
 
