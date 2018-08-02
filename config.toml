@@ -1,4 +1,4 @@
-baseurl                 = "https://marek.sh/"               # Your domain name. Must end with "/"
+baseurl                 = "https://www.marek.sh/"               # Your domain name. Must end with "/"
 languageCode            = "en-us"
 title                   = "Marek"
 theme                   = "sam"
