@@ -11,7 +11,7 @@ pygmentsCodefences      = true
     dateformfull        = "Mon Jan 2 2006 15:04:05 EST"
     favicon             = "/sam.ico"
     homepage            = "Main"                        # What to call the home page link
-    galleryFolder       = "images/"                     # Where you've put your images, after "/content/gallery/"
+#    galleryFolder       = "images/"                     # Where you've put your images, after "/content/gallery/"
     clickablePhotos     = true                          # Allow links to the full size images
     footerText          = "Marek."
 
