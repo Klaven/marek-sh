@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+
+<meta itemprop="name" content="Mini Cluster">
+<meta itemprop="description" content="So I have been working on kubernetes as of late and decided that if I was going to call myself a real kubernetes expert I should be running one in my home around the clock. I will write posts following these miss adventures, as I am sure I&rsquo;ll do a lot of stupid things that you all can ether learn from, or use to make ones self feel better about themselves :).">
+
+
+<meta itemprop="datePublished" content="2018-11-26T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-11-26T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="427">
+
+
+
+<meta itemprop="keywords" content="blog,story," />
+<meta property="og:title" content="Mini Cluster" />
+<meta property="og:description" content="So I have been working on kubernetes as of late and decided that if I was going to call myself a real kubernetes expert I should be running one in my home around the clock. I will write posts following these miss adventures, as I am sure I&rsquo;ll do a lot of stupid things that you all can ether learn from, or use to make ones self feel better about themselves :)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marek.sh/posts/mini-cluster/" /><meta property="article:published_time" content="2018-11-26T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-11-26T00:00:00&#43;00:00"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mini Cluster"/>
+<meta name="twitter:description" content="So I have been working on kubernetes as of late and decided that if I was going to call myself a real kubernetes expert I should be running one in my home around the clock. I will write posts following these miss adventures, as I am sure I&rsquo;ll do a lot of stupid things that you all can ether learn from, or use to make ones self feel better about themselves :)."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Mini Cluster</title>
+	<link rel="stylesheet" href="https://www.marek.sh/css/style.min.278b9c3bdc083d1b9012627cf76538692336f6ea27add3755143eb4047e10d1d.css" integrity="sha256-J4ucO9wIPRuQEmJ892U4aSM29uonrdN1UUPrQEfhDR0=">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://www.marek.sh/">Marek</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					<a href="https://www.marek.sh/posts/">Posts</a>
+					<a href="https://www.marek.sh/"></a>
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://github.com/klaven" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://www.marek.sh/posts/">Posts</a></li>
+			<li><a href="https://www.marek.sh/"></a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Nov 26, 2018</span></div>
+				<h1>Mini Cluster</h1>
+			</header>
+			<div class="content">
+				<p>So I have been working on kubernetes as of late and decided that if I was going to call myself a real kubernetes expert I should be running one in my home around the clock. I will write posts following these miss adventures, as I am sure I&rsquo;ll do a lot of stupid things that you all can ether learn from, or use to make ones self feel better about themselves :).</p>
+
+<p>I have made some design choices already. First it is going to be ARM powered as most of the time I have run it on xeon processors or some other x86 processor. I figured the best learning experiences where the ones where I know the least. Another consideration that helped me pick ARM was the fact that mostly I will just want to run light workloads and so the less energy I use the better.</p>
+
+<p>I thought about getting just a single x64 machines and run the master and worker node on it, but felt like that was really not that awesome and does not often replicate the issues found in the real world.</p>
+
+<p>For my MVP I have decided that I will forgo storage considerations, while it should not be too hard to setup, I don&rsquo;t want to worry about trying to figure out what I want to do for that right now. Nor do I want to buy it. I have been watching the Rook project and think that it would be interesting to do something with that.</p>
+
+<p>That being said I have the hardware in the mail, 2 RockPro64 and 1 2gb Pine64 from Pine64. Why the one Pine vs 3 Rocks? I already owned it and it enabled me to be a little cheaper in purchasing the hardware. :) that is all. I plan on in the future switching it out, or adding a new RockPro when needed. the beauty of a k8s cluster.</p>
+
+<p>I also ordered eMMC cards for the RockPros as the Rocks are going to be the master nodes. (I know, someone is itching to say I will only start with three nodes) I was thinking at first I would just run a one node master with two workers, OR a three master three worker setup with my workload running on the master nodes :/ But what I do know, I can only afford 3 right now :)</p>
+
+<p>In the future, if I need more, I can always add more nodes.</p>
+
+<p>Anyhow, I will write my next post when I get to setting up the hardware :)</p>
+
+<p>Marek</p>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://www.marek.sh/tags/blog">blog</a></span><span class="tag"><a href="https://www.marek.sh/tags/story">story</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>427 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2018-11-25 19:00 -0500</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="prev-post" href="https://www.marek.sh/posts/setting-up-hugo/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Setting Up Hugo</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2019 <a href="https://www.marek.sh/">Marek Counts</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://www.marek.sh/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+	<script src="https://www.marek.sh/js/main.min.784417f5847151f848c339cf0acb13a06cbb648b1483435a28ed4556c4ead69b.js" integrity="sha256-eEQX9YRxUfhIwznPCssToGy7ZIsUg0NaKO1FVsTq1ps="></script>
+
+</body>
+
+</html>

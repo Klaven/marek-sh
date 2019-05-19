@@ -2,21 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Marek</title>
-    <link>https://marek.sh/tags/blog/</link>
+    <link>https://www.marek.sh/tags/blog/</link>
     <description>Recent content in Blog on Marek</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Aug 2018 16:50:48 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 26 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://marek.sh/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.marek.sh/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Setting Up Hugo</title>
-      <link>https://marek.sh/posts/setting-up-hugo/</link>
-      <pubDate>Wed, 01 Aug 2018 16:50:48 -0400</pubDate>
+      <title>Mini Cluster</title>
+      <link>https://www.marek.sh/posts/mini-cluster/</link>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://marek.sh/posts/setting-up-hugo/</guid>
+      <guid>https://www.marek.sh/posts/mini-cluster/</guid>
+      <description>So I have been working on kubernetes as of late and decided that if I was going to call myself a real kubernetes expert I should be running one in my home around the clock. I will write posts following these miss adventures, as I am sure I&amp;rsquo;ll do a lot of stupid things that you all can ether learn from, or use to make ones self feel better about themselves :).</description>
+    </item>
+    
+    <item>
+      <title>Setting Up Hugo</title>
+      <link>https://www.marek.sh/posts/setting-up-hugo/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.marek.sh/posts/setting-up-hugo/</guid>
       <description>Setting Up Hugo So, My first blog post will be about setting up the blog. I know, I know&amp;hellip; I could just set up a word press site, but what is the fun in that. Not only is this more fun. but it should be easier for me to manage.
 Why Hugo? Because it&amp;rsquo;s written in go, compiles quickly (nice while on the go with minimum resources) and lets me edit on the fly.</description>
     </item>

@@ -1,6 +1,6 @@
 ---
 title: "Main"
-date: 2018-08-01T16:48:37-04:00
+date: "2018-08-01"
 draft: false
 ---
-
+something

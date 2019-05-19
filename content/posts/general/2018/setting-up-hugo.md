@@ -1,12 +1,12 @@
 ---
 title: "Setting Up Hugo"
-date: 2018-08-01T16:50:48-04:00
+date: "2018-08-01"
 showDate: true
 draft: false
 tags: ["blog","story"]
 ---
 
-# Setting Up Hugo
+# What is Hugo
 
  So, My first blog post will be about setting up the blog. I know, I know... I could just set up a word press site, but what is the fun in that. Not only is this more fun. but it should be easier for me to manage.
 

@@ -3,41 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://marek.sh/posts/setting-up-hugo/</loc>
-    <lastmod>2018-08-01T16:50:48-04:00</lastmod>
+    <loc>https://www.marek.sh/posts/mini-cluster/</loc>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marek.sh/posts/</loc>
-    <lastmod>2018-02-13T12:21:57-05:00</lastmod>
+    <loc>https://www.marek.sh/main/</loc>
+    <lastmod>2018-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marek.sh/tags/blog/</loc>
-    <lastmod>2018-08-01T16:50:48-04:00</lastmod>
+    <loc>https://www.marek.sh/posts/setting-up-hugo/</loc>
+    <lastmod>2018-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.marek.sh/about/</loc>
+    <lastmod>2018-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.marek.sh/tags/blog/</loc>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://marek.sh/categories/</loc>
+    <loc>https://www.marek.sh/</loc>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://marek.sh/</loc>
-    <lastmod>2018-08-01T16:50:48-04:00</lastmod>
+    <loc>https://www.marek.sh/posts/</loc>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://marek.sh/tags/story/</loc>
-    <lastmod>2018-08-01T16:50:48-04:00</lastmod>
+    <loc>https://www.marek.sh/tags/story/</loc>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://marek.sh/tags/</loc>
-    <lastmod>2018-08-01T16:50:48-04:00</lastmod>
+    <loc>https://www.marek.sh/tags/</loc>
+    <lastmod>2018-11-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

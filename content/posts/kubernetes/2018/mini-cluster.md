@@ -1,6 +1,6 @@
 ---
 title: "Mini Cluster"
-date: 2018-11-26T21:57:03-05:00
+date: "2018-11-26"
 showDate: true
 draft: false
 tags: ["blog","story"]
