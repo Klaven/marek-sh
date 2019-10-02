@@ -18,3 +18,5 @@ Unbound is what I ended up using, although I experimented with Bind and a few ot
 
 ### Unbound Setup
 I setup unbound on ubuntu 18.04. The setup was super easy and the configuration was even easier. There was a hickup (as there always is) that hung me up for a little bit that I will explain further down. 
+
+
