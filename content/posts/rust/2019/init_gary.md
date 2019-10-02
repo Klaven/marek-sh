@@ -1,7 +1,7 @@
 ---
 title: "ARM Cluster Results"
 date: 2018-12-19T00:13:30-04:00
-draft: true  
+draft: false 
 toc: false
 images:
 tags: 
@@ -23,10 +23,12 @@ Kubernetes hurts for small and medium clusters, you want to run high avalibility
 
 The solution, no control plane nodes.
 
-Sometimes the simple answer is the best answer. Gary has a strict no control plane polocy. period.
+Sometimes the simple answer is the best answer. Gary has a strict no control plane policy. period.
 
 ##### Problem Two:
 
-Kubernetes is sometimes... hungry. for all your resources. This was/is a desin dessition. It has let kubernetes move quickly. While Gary will also move quickly, we will also continuesly work to improve performance. It's your cluster, you should not spend your resources running the orchestrator.
+Kubernetes is sometimes... hungry. for all your resources. This was/is a design decision. It has let kubernetes move quickly. While Gary will also move quickly, we will also continuesly work to improve performance. It's your cluster, you should not spend your resources running the orchestrator.
 
+### In Conclusion
 
+Gary is a fun little learning exercise open too all who want to learn. It's objectives are simple and I look forward to sharing the experience.
