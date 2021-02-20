@@ -1,19 +1,49 @@
-baseURL = "http://example.org/"
+baseURL = "https://example.com"
+title   = "Hello Friend NG"
 languageCode = "en-us"
-title = "Marek Counts - The Null Channel"
-theme = "ui"
+theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+# googleAnalytics = ""
+# disqusShortname = ""
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"
 
 [author]
-  name = "Marek Counts"
+  name = "Jane Doe"
 
 [blackfriday]
   hrefTargetBlank = true
 
 [taxonomies]
-  tag      = "software"
+  tag      = "tags"
   category = "categories"
   series   = "series"
 
@@ -25,11 +55,11 @@ theme = "ui"
 
   # Metadata mostly used in document's head
   # 
-  description = "Marek's Blog"
-  keywords = "Software Engineering"
+  description = "Nice theme for homepages and blogs"
+  keywords = ""
   images = [""]
 
-  homeSubtitle = "Hello Friends"
+  homeSubtitle = "Hello Friend NG"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -63,7 +93,7 @@ theme = "ui"
   # Custom footer 
   # If you want, you can easily override the default footer with your own content. 
   #
-  footerLeft = "Powered by <a href=\"http://marek.sh\">electrons</a>"
+  footerLeft = "Powered by electrons<a href=\"http://marek.sh">electrons</a>"
   footerRight = "Made with &#9000; by <a href=\"https://github.com/klaven\">Marek Counts</a>"
 
   # Colors for favicons
@@ -75,7 +105,7 @@ theme = "ui"
 
   [params.logo]
     logoMark     = ">"
-    logoText     = "cd ~/blog/"
+    logoText     = "$ cd /home/"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
@@ -104,12 +134,8 @@ theme = "ui"
 
   # Social icons
   [[params.social]]
-    name = "youtube"
-    url  = "https://www.youtube.com/channel/UCfrwHFvGCdf0_nVW4seBwrg"
-
-  [[params.social]]
     name = "twitter"
-    url  = "https://twitter.com/thenullchannel"
+    url  = "https://twitter.com/"
 
   [[params.social]]
     name = "email"
@@ -117,29 +143,32 @@ theme = "ui"
 
   [[params.social]]
     name = "github"
-    url  = "https://github.com/klaven"
-
-  [[params.social]]
-    name = "github"
-    url  = "https://github.com/the-null-channel"
+    url  = "https://github.com/"
 
   [[params.social]]
     name = "linkedin"
-    url  = "https://www.linkedin.com/in/marekcounts/"
+    url  = "https://www.linkedin.com/"
 
   [[params.social]]
     name = "stackoverflow"
-    url  = "https://stackoverflow.com/users/2243043/marek-counts"
+    url  = "https://www.stackoverflow.com/"
+
+[languages]
+  [languages.en]
+    subtitle  = "Hello Friend NG Theme"
+    weight    = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+  [languages.fr]
+    subtitle  = "Hello Friend NG Theme"
+    weight    = 2
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 [menu]
   [[menu.main]]
     identifier = "about"
-    name       = "Me"
-    url        = "about/me"
-  [[menu.main]]
-    identifier = "about-null"
-    name       = "Null Channel"
-    url        = "about/null"
+    name       = "About"
+    url        = "about/"
   [[menu.main]]
     identifier = "posts"
     name       = "Posts"
