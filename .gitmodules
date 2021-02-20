@@ -1,0 +1,3 @@
+[submodule "themes/ui"]
+	path = themes/ui
+	url = https://github.com/Klaven/klavenx-blog-ui
