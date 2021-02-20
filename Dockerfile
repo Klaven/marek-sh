@@ -14,7 +14,7 @@ COPY . /app
 EXPOSE 1313
 VOLUME /app
 WORKDIR /app
-RUN git submodule update
+RUN git submodule update --recursive
 
 # Start the hugo server which is made available to localhost:1313
 CMD ["hugo", "server", "--disableFastRender", "--bind=0.0.0.0"]
