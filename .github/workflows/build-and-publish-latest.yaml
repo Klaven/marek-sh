@@ -1,4 +1,4 @@
-name: publish_images
+name: publish_images_latest
 
 on:
   push:
