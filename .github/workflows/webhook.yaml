@@ -1,0 +1,19 @@
+name: webhook
+
+on:
+  repository_dispatch:
+
+jobs:
+  say_hello:
+    runs-on: self-hosted
+    steps:
+    - run: |
+        echo "Hello ${{ github.event.client_payload.name }}!"
+        echo "- in ${{ github.event.client_payload.home }}!"
+
+  say_hello2:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "Hello ${{ github.event.client_payload.name }}!"
+        echo "- in ${{ github.event.cleint_payload.home }}!"
