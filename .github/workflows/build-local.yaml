@@ -15,6 +15,12 @@ on:
 
 jobs:
   say_hello:
+    runs-on: self-hosted
+    steps:
+    - run: |
+        echo "Hello ${{ github.event.inputs.name }}!"
+        echo "- in ${{ github.event.inputs.home }}!"
+  say_hello2:
     runs-on: ubuntu-latest
     steps:
     - run: |
