@@ -1,4 +1,4 @@
-name: publish_images
+name: runner-test
 
 runs-on: self-hosted
 on:
