@@ -1,17 +1,16 @@
 name: runner-test
 
-runs-on: self-hosted
 on:
   workflow_dispatch:
     inputs:
       name:
         description: 'Person to greet'
         required: true
-        default: 'Mona the Octocat'
+        default: 'Marek'
       home:
         description: 'location'
         required: false
-        default: 'The Octoverse'
+        default: 'Here'
 
 jobs:
   say_hello:
